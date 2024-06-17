@@ -1,22 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Portal Download</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .item {
+            margin: 0 50px;
+        }
+        .item img {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+        }
+        .item a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-	<strong>EZPHR-DEViOS 앱 다운로드</strong>
-	<ul>
-		<li>
-			<a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/ByungSUNPark/ByungSUNPark.github.io/main/ios/manifest.plist">다운로드</a>
-		</li>
-	</ul>
-
-	<strong>EZPHR-DEVAndroid 앱 다운로드</strong>
-	<ul>
-		<li>
-			<a href="https://github.com/ByungSUNPark/ByungSUNPark.github.io/raw/main/android/app-develop-release.apk">다운로드</a>
-		</li>
-	</ul>
-	
+    <img src="path/to/logo.png" alt="ezCaretech" width="300">
+    <div class="container">
+        <div class="item">
+            <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/ByungSUNPark/ByungSUNPark.github.io/main/ios/manifest.plist">
+                <img src="path/to/ios_image.png" alt="Patient Portal (iOS)">
+                <span>Patient Portal (iOS) Develop</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://github.com/ByungSUNPark/ByungSUNPark.github.io/raw/main/android/app-develop-release.apk">
+                <img src="path/to/android_image.png" alt="Patient Portal (Android)">
+                <span>Patient Portal (Android) Develop</span>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
